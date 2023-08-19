@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+  color: brown;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  background-color: burlywood;
+  padding: 25px 100px;
+  font-weight: 700;
+}
+
+main {
+  margin: 50px 100px;
+  width: 50%;
+  float: left;
+}
+
+aside {
+  width: 20%;
+  margin-top: 50px;
+  margin-left: 5%;
+  float: left;
+}
+
+main .user {
+  margin-bottom: 50px;
+  background-color: rgba(131, 165, 228, 0.678);
+  border-radius: 8px;
+  padding: 25px;
+}
+
+main .user .avatar {
+  float: left;
+  margin-right: 15px;
+  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+}
+
+main .user .delete-icon {
+  float: right;
+  color: darkcyan;
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+main .user .edit-icon {
+  float: right;
+  margin-right: 20px;
+  color: darkcyan;
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+main .user .bio {
+  padding: 20px;
+}
+
+main .user .delete-icon:hover,
+main .user .edit-icon:hover {
+  opacity: 0.5;
+}
+
+form input:not([type="checkbox"]),
+form textarea,
+form button {
+  width: 90%;
+  padding: 12px 5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  background: rgb(253, 221, 181);
+  color: brown;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+aside form label[htmlFor="isHappy"] {
+  font-weight: 700;
+}
+
+form input[type="checkbox"] {
+  margin: 10px;
+}
+
+form button {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 500ms ease;
+}
+
+aside form button:hover {
+  transform: scale(1.02);
+}
+
+.user form {
+  margin-top: 20px;
+}
+
+.user form input,
+.user form textarea,
+.user form button {
+  background: rgba(0, 180, 180, 0.137);
+}
+
+.user form button:hover {
+  transform: scale(1.02);
+}
